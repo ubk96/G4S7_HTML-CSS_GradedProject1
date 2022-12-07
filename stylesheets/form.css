@@ -1,0 +1,107 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.lab-form {
+    margin: 30px 60px 20px;
+    box-shadow: 0px 0px 20px 7px #ccc;
+    max-height: 85vh;
+    overflow-y: scroll;
+    display: flex;
+}
+
+.lab-form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.lab-form>div {
+    width: 50%;
+    padding: 20px 35px;
+    height: 85vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.lab-form>div:last-child {
+    background-image: url("../Images/Lab-Test/lab-test.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+.lab-form form {
+    width: 100%;
+}
+
+.lab-form form h3 {
+    padding: 20px 0;
+}
+
+.lab-form input {
+    border-width: 0 0 1px 0;
+    width: 45%;
+}
+
+.lab-form input,
+.lab-form select {
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.lab-form input[type="checkbox"],
+.lab-form input[type="radio"] {
+    width: auto;
+}
+
+.lab-form select {
+    min-width: 150px;
+}
+
+.lab-form input:focus {
+    background-color: rgb(255, 255, 255, 35%);
+}
+
+.btn-block {
+    margin: 0 40px;
+    padding: 0 20px;
+    width: 45%;
+    text-align: right;
+}
+
+.btn-block button,
+.btn-block input[type="reset"] {
+    background-color: #af67f3;
+    padding: 5px 15px;
+    margin: 0 15px 15px;
+    border-width: 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+sup {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    .lab-form {
+        flex-direction: column-reverse;
+    }
+
+    .lab-form>div {
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .btn-block {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
